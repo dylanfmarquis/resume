@@ -1,0 +1,162 @@
+\documentclass[11pt,letterpaper]{letter}
+\usepackage[letter, total={7.1in, 9.5in}]{geometry}
+\RequirePackage{fontawesome}
+\usepackage[utf8]{inputenc}
+\usepackage{comment}
+\usepackage{color}
+\usepackage{xcolor}
+
+\definecolor{reddy}{HTML}{ED331A}
+\definecolor{bluebook}{HTML}{035AA9}
+\definecolor{greyhound}{HTML}{B7B2C2}
+
+%Footer
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\pagestyle{fancy}
+\fancyfoot[C]{\scriptsize{\textcolor{greyhound}{Dylan F. Marquis - \thepage \ of \pageref{LastPage}}}}
+
+%Font Selection
+\usepackage{romande}
+\usepackage[T1]{fontenc}
+
+%For Paragraph margin
+\usepackage{scrextend}
+
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+\newcommand*{\SectionTitle}[1]{
+    \vspace{3mm}
+    \textcolor{bluebook}{\textsc{\LARGE{{#1}}}}}
+
+    \vspace{0mm}
+
+\newcommand*{\TechSkillSection}[1]{
+    \vspace{5mm}
+    \textbf{\textcolor{black}
+        {\textsc{\large{#1}}}}\vspace{3mm}}
+
+\newcommand*{\TechSkillSub}[2]{
+
+    \textcolor{bluebook}{\textsc{#1}} \\
+    \vspace{-3mm}
+    \begin{addmargin}[3em]{1em}#2\end{addmargin}}
+
+\newcommand*{\Reference}[4]{
+    \vspace{4mm}
+    \\
+    \textbf{#1} \\
+    #2 \\
+    #3 \\
+    #4 \\
+    \vspace{2mm}}
+
+\begin{document}
+ \begin{center}
+
+  \textsc{\Huge{\textbf{Dylan F. Marquis}}} \\
+  \vspace{3mm}
+
+  \normalsize{\small{93 Meadowlark Road, Vernon, CT 06066}}
+
+  \faMobile\ {860.933.7665}\ \ \faEnvelope\ {dylanfmarquis@dylanfmarquis.com} \faHome\ {dylanfmarquis.com} \faGithubSquare\ dylanfmarquis
+
+  \noindent\makebox[\linewidth]{\rule{18cm}{0.400pt}}
+ \end{center}
+
+\SectionTitle{Summary of Qualifications}
+\begin{itemize}
+  \item Supports a large enterprise environment
+  \item Administers and architects a large number of disparate servers and services
+  \item Develops and maintains automated tools, software and open source projects
+  \item Hands-on experience with a wide variety of technologies
+  \item Creative and adaptive to new technological environments
+  \item Motivated, hard working, responsible, flexible, creative, communicates well, committed to collaboration and can work independently in a timely manner
+\end{itemize}
+
+\SectionTitle{Professional Experience}
+\begin{itemize}
+  \item \textbf{UConn ITS Linux System Administrator, 2012 - present}
+  \begin{itemize}
+    \item Architects, builds, maintains and upgrades technical infrastructure and servers
+    \item Develops automation and deployment tools and software
+    \item Architects and maintains web SSO authentication mechanisms
+    \item Application administration and troubleshooting
+    \item Improves and maintains a strong security posture
+  \end{itemize}
+  \item \textbf{UConn ITS User Services Computer Technical Support Analyst, 2010 - 2012}
+  \begin{itemize}
+    \item Developed tools and utilities used by the University
+    \item Maintained large scale educational IT environment
+    \item Desktop support
+    \item Customer service
+    \item Trained new IT staff and student workers
+  \end{itemize}
+\end{itemize}
+
+\SectionTitle{Education}
+\vspace{3mm}\\
+\tab \textbf{University of Connecticut}, Storrs - 2010 \\
+\tab Major: Bachelor of Fine Arts, Illustration \\
+\tab Minor: English \\
+\tab GPA: 3.45 \\
+\tab Dean's List
+
+\vspace{20mm} \\
+
+\SectionTitle{Achievements}
+\begin{itemize}
+  \item Architects, develops and administers the Central Authentication System (CAS) at the University of Connecticut. CAS handles a population of more than 500,000 unique users and performs 40,000-50,000 authentications daily for over 400 web sites and web based applications. The infrastructure is redundant and maintains high availability for users.
+  \item Helped develop a custom application in Python for users to manage their account information, passwords, reset information; as well as allow IT staff to perform account resets, account locks, and account lookups in Active Directory, Kerberos, and openLDAP.
+  \item Hosts the University of Connecticut’s main Wordpress multisite, which serves 750,000 users and 3,500,000 page view per month. 
+  \item Hosts the university’s main websites; uconn.edu, today.uconn.edu, health.uconn.edu (main site for the University’s hospital).
+  \item Developed custom automated deployment and management tools for shared hosting environments with features including site migration, automatic PHP compilation and version selection specific to site, user and site provisioning, and DNS record creation and modification.
+  \item Build and managed over 100 VDI Linux desktops for engineering students. This included developing software for automatic virtual desktop provisioning through the RHEV API as well as Infoblox network provisioning and operating system tailoring, and Ansible integration.
+  \item Created and is the lead maintainer of an open-source project for Python Infoblox integration via the Infoblox RESTful API.
+  \item Primary system administrator over 70 servers with disparate workloads including; data analytics, web hosting, authentication, operational monitoring, Java hosting, database hosting.
+\end{itemize}
+
+\SectionTitle{Technical Skills}
+
+\TechSkillSection{Identity and Access Technologies}
+\TechSkillSub{Authentication Systems}{CAS (Central Authenication System), Shibboleth (SAML 2.0 and InCommon Federation), LDAP, Active Directory,  Kerberos, Duo}
+\TechSkillSub{Authentication Clients}{mod\_auth\_cas, mod\_ldap, phpCAS, simpleSAMLphp, Java CAS, .Net CAS client, pam\_krb5, RADIUS, eduroam}
+\TechSkillSub{Directory/Authorization Services}{openLDAP, Active Directory}
+\\
+\vspace{40mm}
+\TechSkillSection{Operating Systems}
+\TechSkillSub{Linux}{Red Hat Enterprise Linux 6 and 7, Red Hat Linux Desktop 7, Centos 6 and 7, Fedora 24, Debian (squeeze/wheezy), Ubuntu 16}
+\TechSkillSub{Windows}{Windows Server 2008 R2, Windows Server 2012, Windows Server 2003, Windows XP/7/8/10}
+\TechSkillSub{OS X}{OS X 10.11}
+
+\TechSkillSection{Programming Languages}
+\TechSkillSub{General Purpose}{C, Python, PHP}
+\TechSkillSub{Database}{SQL}
+\TechSkillSub{Shell}{Bash, Powershell, Batch}
+\TechSkillSub{Web Design}{HTML 4, CSS 3, Javascript, ActionScript}
+\TechSkillSub{General Markup}{Markdown, \LaTeX}
+
+\TechSkillSection{Server/Infrastructure Technologies}
+\TechSkillSub{Configuration Management}{Red Hat Satellite Server, Red Hat Network, Ansible, SCCM}
+\TechSkillSub{Application Frameworks, Build and Automation Tools}{Apache Maven, Spring Source}
+\TechSkillSub{Version Control and SDLC}{Git, Subversion, Stash, Jira, Github, Confluence}
+\\ \vspace{8mm}
+\TechSkillSub{Data Backup}{Tivoli (TSM), rsync}
+\TechSkillSub{Databases}{MySQL, MariaDB (multi-mastered replication), Oracle}
+
+\TechSkillSub{Cloud Computing Services}{Amazon Web Services, Microsoft Azure}
+\TechSkillSub{Network and Distributed File Systems}{NFSv3, Gluster, Ceph}
+\TechSkillSub{Firewalls}{Fortinet, firewalld, iptables}
+\TechSkillSub{Network Management}{Infoblox}
+\TechSkillSub{Monitoring Technologies}{Zabbix, monit, Splunk}
+\TechSkillSub{Load Balancers}{Citrix NetScaler, haproxy, nginx, uCARP}
+\TechSkillSub{Proxy and Web Caching}{Apache, nginx, varnish, squid}
+\TechSkillSub{Data Analytics}{Splunk, GNU plot}
+\TechSkillSub{Web Servers}{Apache, nginx, HHVM, Tomcat 6}
+\TechSkillSub{Virtualization Technologies}{VMWare, RHEV, Xen}
+\TechSkillSub{Web Technologies}{Wordpress, XML-RPC}
+\TechSkillSub{Hardware}{IBM Bladecenter H, Cisco UCS M4 Blades, IBM x3550 M4}
+\TechSkillSection{Productivity}
+\TechSkillSub{Applications}{Microsoft Office Suite, Adobe Creative Suite, Google Docs, OpenOffice}
+\TechSkillSub{Ticketing and Work Order Systems}{BMC Footprints, USD}
+\end{document}
